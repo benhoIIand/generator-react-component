@@ -1,0 +1,28 @@
+{
+  "name": "rightmove-<%= moduleName %>",
+  "version": "1.0.0",
+  "description": "Rightmove component called <%= capitalisedName %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "postinstall": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest-cli": "^0.4.0",
+    "react": "^0.13.1",
+    "react-tools": "^0.13.1"
+  },
+  "jest": {
+    "rootDir": "./",
+    "testDirectoryName": "test",
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}
